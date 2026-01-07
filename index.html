@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SDG 13 – Climate Action</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<!-- ================= HEADER / NAVIGATION ================= -->
+<header class="top-header">
+  <div class="header-container">
+    <h1 class="site-title">Climate Action</h1>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">About / Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="section hero-area">
+    <div class="hero-content">
+      <h2>Act Now for the Climate</h2>
+      <p>Supporting Sustainable Development Goal 13</p>
+      <button id="goGallery">See Climate Impacts</button>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="section gallery-area">
+    <h2>Climate Action Gallery</h2>
+
+    <p class="gallery-intro">
+      This gallery highlights the real impacts of climate change and
+      the actions needed to protect our planet. Each image represents
+      an issue or solution related to Sustainable Development Goal 13.
+    </p>
+
+    <div class="slider-box">
+      <button class="nav-btn" id="backBtn" aria-label="Previous image">←</button>
+
+      <figure>
+        <img
+          id="sliderImg"
+          src="images/img1.jpg"
+          alt="Flooding caused by climate change"
+        >
+        <figcaption id="imageCaption" class="gallery-caption">
+          Flooding caused by extreme rainfall linked to climate change.
+        </figcaption>
+      </figure>
+
+      <button class="nav-btn" id="forwardBtn" aria-label="Next image">→</button>
+    </div>
+  </section>
+
+  <!-- ABOUT / CONTACT SECTION -->
+  <section id="contact" class="section info-area">
+    <h2>About & Contact</h2>
+
+    <p>
+      SDG 13 encourages urgent action to combat climate change by
+      reducing greenhouse gas emissions, promoting renewable energy,
+      and increasing awareness of environmental protection.
+    </p>
+
+    <button id="contactToggle">Contact Details</button>
+
+    <div class="contact-box">
+      <p><strong>Email:</strong> sdg13@climate.org</p>
+      <p><strong>Phone:</strong> +60 11-234 5678</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 SDG 13 | Climate Action</p>
+</footer>
+
+<!-- ================= DATA FOR GALLERY (IN INDEX) ================= -->
+<script>
+  const galleryImages = [
+    "images/img1.jpg",
+    "images/img2.jpg",
+    "images/img3.jpg",
+    "images/img4.png",
+    "images/img5.jpg"
+  ];
+
+  const imageCaptions = [
+    "Flooding caused by extreme rainfall linked to climate change.",
+    "Wildfires resulting from rising global temperatures.",
+    "Melting glaciers due to global warming.",
+    "Solar energy as a clean and renewable solution.",
+    "Tree planting helps reduce carbon dioxide levels."
+  ];
+</script>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
